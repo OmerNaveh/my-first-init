@@ -11,3 +11,8 @@ function timeFromAToB(date1,date2){
     const moment2 = moment(date2);
     return momenent1.from(moment2);
 }
+
+function daysInMonth(dateStr, formatStr){
+ return moment(dateStr, formatStr).daysInMonth();
+}
+// daysInMonth("2012-02", "YYYY-MM");
